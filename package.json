@@ -1,0 +1,26 @@
+{
+  "name": "pfe-2023-1-postgres-lessons",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "node ./scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fc-fullstack-courses/pfe-2023-1-postgres-lessons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fc-fullstack-courses/pfe-2023-1-postgres-lessons/issues"
+  },
+  "homepage": "https://github.com/fc-fullstack-courses/pfe-2023-1-postgres-lessons#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "lodash": "^4.17.21",
+    "pg": "^8.11.3",
+    "query-string": "^9.0.0"
+  }
+}
