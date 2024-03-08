@@ -52,6 +52,8 @@ FROM orders_with_full_price o_fp, average_order_price avg_op
 WHERE o_fp.full_price > avg_op.avg_price
 ORDER BY o_fp.full_price;
 
+
+--TEORETICLY NOT WORKING NEW IDEAS(TRY TO USE ONLY ONE WITH)
 --
 WITH avg_table AS (
   SELECT avg(pto.quantity * p.price) "avg_of_all"
