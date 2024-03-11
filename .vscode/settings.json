@@ -5,16 +5,6 @@
       "server": "localhost",
       "port": 5432,
       "driver": "PostgreSQL",
-      "name": "My lessons db",
-      "database": "pfe-2023_1_lessons",
-      "username": "postgres",
-      "password": "postgres"
-    },
-    {
-      "previewLimit": 50,
-      "server": "localhost",
-      "port": 5432,
-      "driver": "PostgreSQL",
       "name": "postgres",
       "database": "postgres",
       "username": "postgres",

@@ -7,7 +7,11 @@ const { user, password, host, port, database } = require('../config/db.json');
 const { chanceToMakeOrder } = require('../config/ordersGeneration.json');
 const { generateProducts } = require('../utils/products');
 const { generateOrders, generateProductsToOrders } = require('../utils/orders');
-const { generateReviewsMap, generateReviews, generateRatings } = require('../utils/reviews');
+const {
+  generateReviewsMap,
+  generateReviews,
+  generateRatings,
+} = require('../utils/reviews');
 
 const config = {
   user,
@@ -57,9 +61,7 @@ async function start() {
     RETURNING *
     ;`);
 
-  const orderingUsers = createdUsers.filter(
-    () => _.random(0, 100) <= chanceToMakeOrder
-  );
+  const orderingUsers = createdUsers.filter(() => _.random(0, 100) <= chanceToMakeOrder);
 
   const { rows: createdOrders } = await client.query(`
     INSERT INTO orders (
